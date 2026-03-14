@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>We’re Building Something Special</title>
+
+  <style>
+    :root {
+      --primary: #0f2a44;      /* banking blue */
+      --secondary: #1f7a8c;    /* ocean teal */
+      --accent: #f2c94c;       /* sun/sand */
+      --light: #f7f9fb;
+      --muted: #8a9aa9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #eaf3f7 0%, #ffffff 60%);
+      color: var(--primary);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background: #ffffff;
+      max-width: 760px;
+      width: 100%;
+      padding: 3rem;
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(15, 42, 68, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative wave */
+    .wave {
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background: radial-gradient(
+        circle at 50% -40%,
+        var(--secondary) 60%,
+        transparent 61%
+      );
+      opacity: 0.08;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      color: var(--secondary);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    h1 span {
+      color: var(--secondary);
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #334e68;
+      margin-bottom: 1.5rem;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--light);
+      padding: 0.6rem 1rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      color: var(--primary);
+      margin-bottom: 2rem;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px rgba(242, 201, 76, 0.25);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    .feature {
+      background: var(--light);
+      padding: 1.2rem;
+      border-radius: 12px;
+      font-size: 0.95rem;
+    }
+
+    .feature strong {
+      display: block;
+      margin-bottom: 0.4rem;
+      color: var(--secondary);
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    footer span {
+      white-space: nowrap;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="logo">Abstracte Bank</div>
+
+    <div class="status">
+      <div class="status-dot"></div>
+      Work in Progress
+    </div>
+
+    <h1>
+      De enige bank<br />
+      <span>Die abstract is</span>
+    </h1>
+
+    <p>
+      Er wordt hier abstract gewerkt aan een abstracte toekomst met een abstract doel in de abstracte financiele sector
+    </p>
+
+    <p>
+      Dit is de plek voor als u een abstracte investering nodig hebt en uw abstracte business in de abstracte Lustrumvakantie sector zit
+    </p>
+
+    <section class="features">
+      <div class="feature" onclick="pils()">
+        <strong>Built on Bier</strong>
+        Of andere alcoholsoorten
+      </div>
+
+      <div class="feature" onclick="locatieBekendmaking()">
+        <strong>Designed for fun</strong>
+        F is voor vrienden die samen dingen doen
+      </div>
+
+      <div class="feature" onclick="kunst()">
+        <strong>Abstract</strong>
+        Alles hier is abstract
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 Abstracte Bank</span>
+      <span>Secure • Compliant • Coming soon</span>
+    </footer>
+
+    <div class="wave"></div>
+  </main>
+</body>
+<script>
+function pils(){
+window.open("https://nl.wikipedia.org/wiki/Hertog_Jan_Brouwerij");
+}
+function locatieBekendmaking(){
+window.open("https://en.wikipedia.org/wiki/Crop_circle");
+}
+function kunst(){
+window.open("https://www.youtube.com/shorts/EyKF_cOuwno")
+}
+</script>
+</html>
