@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bet geplaatst</title>
+
+<style>
+:root {
+  --gold: #f2c94c;
+  --dark: #071521;
+  --card: rgba(255,255,255,0.06);
+}
+
+body {
+  font-family: "Segoe UI", system-ui;
+  background: radial-gradient(circle at top, #0f2a44, #071521);
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* CONTAINER */
+.container {
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(14px);
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 600px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+/* HEADER */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  color: var(--gold);
+}
+
+/* ICON */
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* MESSAGE */
+p {
+  color: #c8d3dc;
+  margin-bottom: 2rem;
+}
+
+/* CASINO ELEMENTS */
+.casino-strip {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2rem 0;
+}
+
+.slot {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  width: 60px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.9rem 1.5rem;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #f2c94c, #f2994a);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(242,201,76,0.5);
+}
+
+/* CHIPS */
+.chips {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #8a9aa9;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="icon">🎰</div>
+
+<h1>Abstract financieel product wat abstract legaal gezien geen abstract gokken is <span>Gekocht!</span></h1>
+
+<p>
+Voor abstracte legale redenen 
+</p>
+
+<!-- SLOT MACHINE EFFECT -->
+<div class="casino-strip">
+  <div class="slot">🍀</div>
+  <div class="slot">💎</div>
+  <div class="slot">🔥</div>
+</div>
+
+<!-- CHIPS -->
+<div class="chips">
+💰 +1000 balkkudo's
+<small><small><small><p>Abstract legaal gezien heb je geen abstracte weddenschap gedaan maar is de mogelijke abstracte winst een gratis abstracte sweepstake waar je aan mee doet nadat je 1000 balkkudo's gekocht hebt</p></small></small></small>
+</div>
+
+<!-- BUTTONS -->
+<a href="index.html" class="button">🏠 Home</a>
+
+
+<footer>
+© 2026 Pelimarket — Legaal gezien geen gokken
+</footer>
+
+</div>
+
+</body>
+</html>
